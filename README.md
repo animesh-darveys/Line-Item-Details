@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Shopify App Template - Extension Only
 
 This is a template for building a [Shopify app](https://shopify.dev/docs/apps/getting-started) using [Preact](https://preactjs.com/) and [Vite](https://vite.dev/). It uses Shopify's [Direct API access](https://shopify.dev/docs/api/app-home#direct-api-access) and [App Bridge](https://shopify.dev/docs/api/app-bridge) to make authenticated calls to the Shopify Admin API directly from the browser — no server required.
@@ -154,3 +155,6 @@ Shopify:
 - [Metaobjects](https://shopify.dev/docs/apps/custom-data/metaobjects)
 - [App extensions](https://shopify.dev/docs/apps/app-extensions/list)
 - [Shopify Functions](https://shopify.dev/docs/api/functions)
+=======
+# Line-Item-Details
+>>>>>>> 33a5d24dab4a334cd1027bbfb7357dc2b6d61c34
