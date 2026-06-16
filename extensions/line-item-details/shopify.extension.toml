@@ -1,0 +1,18 @@
+api_version = "2026-04"
+
+[[extensions]]
+name = "line-item-details"
+handle = "line-item-details"
+type = "ui_extension"
+uid = "8b952e54-0734-258c-d377-d0866a75ca406d094879"
+
+[[extensions.targeting]]
+module = "./src/LineItemDetails.jsx"
+target = "customer-account.order-status.block.render"
+
+[[extensions.targeting.metafields]]
+namespace = "custom"
+key = "line_item_details"
+
+[extensions.capabilities]
+api_access = true

@@ -1,0 +1,16 @@
+api_version = "2026-04"
+
+[[extensions]]
+name = "order-status-page"
+handle = "order-status-page"
+
+uid = "ff517eb0-2b0b-ff40-bfae-1c2442e8420e7ad791bb"
+type = "ui_extension"
+
+[[extensions.targeting]]
+module = "./src/OrderStatusPage.jsx"
+target = "customer-account.page.render"
+
+[extensions.capabilities]
+api_access = true
+network_access = false
