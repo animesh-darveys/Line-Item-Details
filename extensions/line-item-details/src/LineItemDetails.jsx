@@ -79,7 +79,7 @@ function Extension() {
                 </s-grid-item>
 
                 <s-grid-item>
-                  <s-stack gap="small">
+                  <s-stack>
                     <s-text>
                       {item.product_title}
                     </s-text>
