@@ -69,6 +69,8 @@ function Extension() {
                     borderWidth="base"
                     borderRadius="base"
                     aspectRatio="1 / 1"
+                    objectFit="cover"
+                    inlineSize="fill"
                       src={item.image_url}
                       alt={item.product_title}
                     />
@@ -99,6 +101,8 @@ function Extension() {
                 </s-text>
               )} */}
 
+              <s-divider></s-divider>
+
               {item.qty_statuses?.map((shipment, shipmentIndex) => {
                 const activeIndex = shipment.status?.findIndex(
                   (status) => status.value === 1
@@ -112,9 +116,6 @@ function Extension() {
                 return (
                   <s-box
                     key={`${item.line_item_id}-${shipmentIndex}`}
-                    border="base"
-                    borderRadius="base"
-                    padding="base"
                   >
                     <s-stack gap="small">
                       <s-text>
@@ -134,7 +135,7 @@ function Extension() {
 
                       <s-stack gap="extra-tight">
                         {shipment.status?.map((step, stepIndex) => (
-                          <s-text key={stepIndex}>
+                          <s-text key={stepIndex} type="small ">
                             {stepIndex <= activeIndex ? '✅' : '⬜'} {step.name}
                           </s-text>
                         ))}
