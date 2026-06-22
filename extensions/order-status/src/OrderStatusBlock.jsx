@@ -30,7 +30,7 @@ function Extension() {
   }, []);
 
   return (
-    <s-banner heading="Order Status">
+    <s-banner heading="Order Status" tone="success">
       <s-text tone="success" type="strong">{orderStatus}</s-text>
     </s-banner>
   );
